@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!--    search bar-->
+<div >
+<form class="form-inline d-flex justify-content-center" id="search">
+    <input class="form-control col-7 my-4 mx-2" type="search" placeholder="Search Company Here" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+
+
+<br>
+<!--main content-->
+<div class="maindiv mx-5">
+    <div class="imgdiv">
+        <br>
+        <img src="{{ url_for('static', filename='images/eqax.png') }}" alt="Eqaximg" class="rimage">
+    </div>
+
+    <br>
+        <!--Typewriter effect welcome message-->
+    <div class="my-4 mx-5 typewriter">
+    <h1>
+    <a href="" class="typewrite dynamictxt" data-period="2000" data-type='[ "Hi,\n Welcome to Equity Axiom.", "Struggling which stock to buy?", "Do not know how to research?", "Confused?", "Everything you wish...is here."]'>
+    <span class="wrap"></span>
+    </a>
+    </h1>
+    </div>
+
+
+
+
+
+{% endblock %}

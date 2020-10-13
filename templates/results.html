@@ -1,0 +1,370 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+<style>
+
+
+  body{background-color:rgb(247, 247, 247)}
+
+
+
+
+    table{
+    display:inline-block;
+    width: 50% !important;
+<!--    border:3px solid red;-->
+    }
+
+    .mxe{
+    margin-left: 6rem!important;
+    }
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+    <table class="table table-hover table-dark col-3 mxe  my-4" id="size_rating" >
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Size Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Net Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Net Profit Rating(TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Net Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Net Sales Rating(TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Net Worth Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>CFO rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!--GROWTH RATING-->
+
+    <table class="table table-hover table-dark  col-3 mxe my-4" id="growth_rating" >
+  <thead>
+    <tr>
+        <th scope="col"></th>
+      <th scope="col">Growth Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Growth in Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Growth in Profit Rating (TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Growth in Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Growth in Sales Rating (TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Growth in Equity Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>Growth in CFO Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>Growth in FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--DEBT RATING-->
+
+    <table class="table table-hover table-dark  col-3 mxe my-4" id="debt_rating" >
+  <thead>
+    <tr>
+        <th scope="col"></th>
+      <th scope="col">Debt Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Growth in Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Growth in Profit Rating (TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Growth in Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Growth in Sales Rating (TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Growth in Equity Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>Growth in CFO Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>Growth in FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Profitability RATING-->
+
+    <table class="table table-hover table-dark  col-3 mxe my-4" id="profitailty_rating" >
+  <thead>
+    <tr>
+        <th scope="col"></th>
+      <th scope="col">Profitability Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Growth in Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Growth in Profit Rating (TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Growth in Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Growth in Sales Rating (TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Growth in Equity Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>Growth in CFO Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>Growth in FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Price RATING-->
+
+    <table class="table table-hover table-dark  col-3 mxe my-4" id="price_rating" >
+  <thead>
+    <tr>
+        <th scope="col"></th>
+      <th scope="col">Price Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Growth in Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Growth in Profit Rating (TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Growth in Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Growth in Sales Rating (TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Growth in Equity Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>Growth in CFO Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>Growth in FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Cashflow RATING-->
+
+    <table class="table table-hover table-dark  col-3 mxe my-4" id="cashflow_rating" >
+  <thead>
+    <tr>
+        <th scope="col"></th>
+      <th scope="col">Cashflow Rating</th>
+      <th scope="col">Value</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Growth in Profit Rating</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Growth in Profit Rating (TTM)</td>
+      <td>Value</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Growth in Sales Rating</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">4</th>
+      <td>Growth in Sales Rating (TTM)</td>
+      <td>Value</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Growth in Equity Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td>Growth in CFO Rating</td>
+      <td>Value</td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td>Growth in FCF Rating</td>
+      <td>Value</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
